@@ -1,0 +1,47 @@
+{
+	"resources":[
+		{
+			"webletResource":{
+				"name":"login",
+				"title":"Web Login",
+				"icon":"icon.png",
+				"instanceable":false,
+				"viewURL":"login.html",
+				"helpURL":"help.html",
+				"loadJS":"login.js",
+				"loadCSS":"",
+				"permissions":{
+					"supports":[
+						{
+							"action":"VIEW",
+							"bit":1
+						},
+						{
+							"action":"ADD_TO_PAGE",
+							"bit":2
+						},
+						{
+							"action":"CONFIGURATION",
+							"bit":4
+						}
+						
+					],
+					"siteMemberDefaults":[
+						"VIEW"
+					],
+					"guestDefaults":[
+						"VIEW"
+					],
+					"guestUnsupported":[
+						"CONFIGURATION"
+					]
+					
+				}
+				
+			}
+			
+		}
+		
+	]
+	
+}
